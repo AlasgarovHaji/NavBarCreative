@@ -133,3 +133,11 @@ body {
 .whiteButton:hover {
     border: 1px solid #000;
 }
+
+.text p{
+    opacity: 0.8;
+}
+.text h1{
+    display: flex;
+    gap: 1px;
+}
