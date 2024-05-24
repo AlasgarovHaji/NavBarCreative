@@ -54,15 +54,15 @@ body {
 .portfolio-main {
     background-color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 40px;
     padding: 20px;
-    flex-wrap: wrap; /* Eklendi: İçeriğin daha küçük ekranlara uyumlu olması için */
+    flex-wrap: wrap; 
 }
 
 .text {
-    max-width: 500px; /* Eklendi: Metin kutusunun genişliğini sınırlamak için */
-    margin-bottom: 20px; /* Eklendi: Alt boşluk */
+    max-width: 500px; 
+    margin-bottom: 20px; 
 }
 
 .text h1 {
@@ -71,18 +71,18 @@ body {
 }
 
 .text h1 + h1 {
-    color: #000; /* Eklendi: Renk siyah yapıldı */
+    color: #000; 
 }
 
 .text p {
     opacity: 0.8;
-    font-size: 18px; /* Eklendi: Yazı boyutu */
-    line-height: 1.5; /* Eklendi: Satır yüksekliği */
+    font-size: 18px; 
+    line-height: 1.5; 
 }
 
 .buttonDiv {
     display: flex;
-    gap: 10px; /* Eklendi: Butonlar arasında boşluk */
+    gap: 10px; 
 }
 
 .blackButton, .whiteButton {
@@ -92,7 +92,7 @@ body {
     border: 1px solid transparent;
     padding: 10px 20px;
     font-weight: bold;
-    cursor: pointer; /* Eklendi: Butonlar üzerinde fare imleci */
+    cursor: pointer; 
 }
 
 .whiteButton {
@@ -120,12 +120,12 @@ body {
     .portfolio-header {
         flex-direction: column;
         align-items: center;
-        margin: 0 20px; /* Güncellendi: Daha küçük margin */
+        margin: 0 20px; 
     }
 
     .portfolio-title {
         margin-bottom: 10px;
-        text-align: center; /* Eklendi: Başlık ortalandı */
+        text-align: center; 
     }
 
     .portfolio-nav {
@@ -142,58 +142,58 @@ body {
     }
 
     .portfolio-nav a {
-        display: block; /* Eklendi: Bağlantılar dikey olarak sıralandı */
-        margin: 5px 0; /* Eklendi: Bağlantılar arasında boşluk */
+        display: block; 
+        margin: 5px 0; 
     }
 
     .portfolio-main {
         flex-direction: column;
         align-items: center;
-        margin: 0 20px; /* Güncellendi: Daha küçük margin */
+        margin: 0 20px; 
     }
 
     .text {
-        text-align: center; /* Eklendi: Metin ortalandı */
+        text-align: center; 
     }
 
     .buttonDiv {
-        flex-direction: column; /* Eklendi: Butonlar dikey olarak sıralandı */
-        gap: 10px; /* Güncellendi: Butonlar arasında boşluk */
+        flex-direction: column;
+        gap: 10px; 
     }
 }
 
 @media only screen and (max-width: 480px) {
     .portfolio-header {
         padding: 10px;
-        margin: 0 10px; /* Güncellendi: Daha küçük margin */
+        margin: 0 10px; 
     }
 
     .portfolio-title {
-        font-size: 20px; /* Güncellendi: Daha küçük başlık boyutu */
+        font-size: 20px; 
     }
 
     .portfolio-nav a {
-        padding: 5px 0; /* Güncellendi: Daha küçük padding */
+        padding: 5px 0;
     }
 
     .portfolio-main {
-        margin: 0 10px; /* Güncellendi: Daha küçük margin */
-        padding: 10px; /* Güncellendi: Daha küçük padding */
+        margin: 0 10px;
+        padding: 10px; 
     }
 
     .text h1 {
-        font-size: 40px; /* Güncellendi: Daha küçük başlık boyutu */
+        font-size: 40px;
     }
 
     .text p {
-        font-size: 16px; /* Güncellendi: Daha küçük yazı boyutu */
+        font-size: 16px; 
     }
 
     .blackButton, .whiteButton {
-        padding: 10px 15px; /* Güncellendi: Daha küçük padding */
+        padding: 10px 15px; 
     }
 
     .photo img {
-        max-width: 100%; /* Güncellendi: Görselin genişliği sınırsız */
+        max-width: 100%;
     }
 }
