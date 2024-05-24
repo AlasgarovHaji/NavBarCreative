@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 40px 0 40px;
+    margin: 0 40px;
 }
 
 .portfolio-title {
@@ -51,16 +51,81 @@ body {
     height: 10px;
 }
 
+.portfolio-main {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 40px;
+    padding: 20px;
+    flex-wrap: wrap; /* Eklendi: İçeriğin daha küçük ekranlara uyumlu olması için */
+}
 
+.text {
+    max-width: 500px; /* Eklendi: Metin kutusunun genişliğini sınırlamak için */
+    margin-bottom: 20px; /* Eklendi: Alt boşluk */
+}
 
-@media only screen and (max-width: 600px) {
+.text h1 {
+    color: #ff8a56;
+    font-size: 60px;
+}
+
+.text h1 + h1 {
+    color: #000; /* Eklendi: Renk siyah yapıldı */
+}
+
+.text p {
+    opacity: 0.8;
+    font-size: 18px; /* Eklendi: Yazı boyutu */
+    line-height: 1.5; /* Eklendi: Satır yüksekliği */
+}
+
+.buttonDiv {
+    display: flex;
+    gap: 10px; /* Eklendi: Butonlar arasında boşluk */
+}
+
+.blackButton, .whiteButton {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer; /* Eklendi: Butonlar üzerinde fare imleci */
+}
+
+.whiteButton {
+    background-color: #fff;
+    color: #000;
+}
+
+.blackButton:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.whiteButton:hover {
+    border: 1px solid #000;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
     .portfolio-header {
         flex-direction: column;
         align-items: center;
+        margin: 0 20px; /* Güncellendi: Daha küçük margin */
     }
 
     .portfolio-title {
         margin-bottom: 10px;
+        text-align: center; /* Eklendi: Başlık ortalandı */
     }
 
     .portfolio-nav {
@@ -75,69 +140,60 @@ body {
         display: block;
         margin-bottom: 5px;
     }
+
+    .portfolio-nav a {
+        display: block; /* Eklendi: Bağlantılar dikey olarak sıralandı */
+        margin: 5px 0; /* Eklendi: Bağlantılar arasında boşluk */
+    }
+
+    .portfolio-main {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px; /* Güncellendi: Daha küçük margin */
+    }
+
+    .text {
+        text-align: center; /* Eklendi: Metin ortalandı */
+    }
+
+    .buttonDiv {
+        flex-direction: column; /* Eklendi: Butonlar dikey olarak sıralandı */
+        gap: 10px; /* Güncellendi: Butonlar arasında boşluk */
+    }
 }
 
-.photo img {
-    width: 500px;
-    height: 595px;
-}
+@media only screen and (max-width: 480px) {
+    .portfolio-header {
+        padding: 10px;
+        margin: 0 10px; /* Güncellendi: Daha küçük margin */
+    }
 
-.portfolio-main {
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 40px 0 40px;
-    padding: 20px;
-}
+    .portfolio-title {
+        font-size: 20px; /* Güncellendi: Daha küçük başlık boyutu */
+    }
 
-.text h1:nth-child(1) {
-    color: #ff8a56;
-    font-size: 60px;
+    .portfolio-nav a {
+        padding: 5px 0; /* Güncellendi: Daha küçük padding */
+    }
 
-}
+    .portfolio-main {
+        margin: 0 10px; /* Güncellendi: Daha küçük margin */
+        padding: 10px; /* Güncellendi: Daha küçük padding */
+    }
 
-.text h1:nth-child(2) {
-    font-size: 60px;
-}
+    .text h1 {
+        font-size: 40px; /* Güncellendi: Daha küçük başlık boyutu */
+    }
 
-.text h1:nth-child(3) {
-    font-size: 60px;
-}
+    .text p {
+        font-size: 16px; /* Güncellendi: Daha küçük yazı boyutu */
+    }
 
-.blackButton {
-    display: inline;
-    margin-right: 10px;
-    background-color: #000;
-    color: #fff;
-    border: 1px solid transparent;
-    padding: 10px 20px;
-    font-weight: bold;
-}
+    .blackButton, .whiteButton {
+        padding: 10px 15px; /* Güncellendi: Daha küçük padding */
+    }
 
-.whiteButton {
-    display: inline;
-    margin-right: 10px;
-    background-color: #fff;
-    color: #000;
-    border: 1px solid transparent;
-    padding: 10px 20px;
-    font-weight: bold;
-}
-
-.blackButton:hover {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-}
-
-.whiteButton:hover {
-    border: 1px solid #000;
-}
-
-.text p{
-    opacity: 0.8;
-}
-.text h1{
-    display: flex;
-    gap: 1px;
+    .photo img {
+        max-width: 100%; /* Güncellendi: Görselin genişliği sınırsız */
+    }
 }
